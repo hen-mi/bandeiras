@@ -278,17 +278,23 @@ class _bandeirasState extends State<bandeiras> {
           body: SafeArea(child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+
               Tooltip(
                 message: "$b_atual",
-                child: Image.asset('images/$b_atual.png',
+                child: Padding(
+                  padding: EdgeInsets.all(12),
+                  child:Image.asset('images/$b_atual.png',
+
                   width: 400,
                   height: 250,
                   colorBlendMode: BlendMode.darken,
                   fit: BoxFit.fitWidth,
+                 ),
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 10.0),
+
+                padding: EdgeInsets.all(12),
                 child: Text(
                   "$nome",
                   textAlign: TextAlign.center,
@@ -300,7 +306,7 @@ class _bandeirasState extends State<bandeiras> {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 50.0),
+                margin: const EdgeInsets.only(top: 70.0),
                 child: SizedBox(
                   width: 150,
                   height: 45,
